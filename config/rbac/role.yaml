@@ -9,6 +9,26 @@ rules:
 - apiGroups:
   - cache.example.com
   resources:
+  - memcachedexts
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - cache.example.com
+  resources:
+  - memcachedexts/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - cache.example.com
+  resources:
   - memcacheds
   verbs:
   - create

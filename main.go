@@ -27,9 +27,9 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	cachev1 "github.com/example-inc/memcached-operator/api/v1"
-	cachev1alpha1 "github.com/example-inc/memcached-operator/api/v1alpha1"
-	"github.com/example-inc/memcached-operator/controllers"
+	cachev1 "github.com/phantomjinx/memcached-operator/api/v1"
+	cachev1alpha1 "github.com/phantomjinx/memcached-operator/api/v1alpha1"
+	"github.com/phantomjinx/memcached-operator/controllers"
 	// +kubebuilder:scaffold:imports
 )
 

@@ -24,7 +24,7 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	cachev1alpha1 "github.com/example-inc/memcached-operator/api/v1alpha1"
+	cachev1alpha1 "github.com/phantomjinx/memcached-operator/api/v1alpha1"
 )
 
 // MemcachedExtReconciler reconciles a MemcachedExt object

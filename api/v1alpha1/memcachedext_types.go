@@ -17,6 +17,7 @@ limitations under the License.
 package v1alpha1
 
 import (
+	apiv1 "github.com/phantomjinx/memcached-operator/api/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
@@ -46,7 +47,7 @@ type MemcachedExt struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Sources []SourceSpec `json:"sources,omitempty"`
+	Sources []apiv1.SourceSpec `json:"sources,omitempty"`
 
 	Spec   MemcachedExtSpec   `json:"spec,omitempty"`
 	Status MemcachedExtStatus `json:"status,omitempty"`
