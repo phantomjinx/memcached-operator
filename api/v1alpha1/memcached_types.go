@@ -1,5 +1,5 @@
 /*
-
+Copyright 2021.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package v1
+package v1alpha1
 
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -23,26 +23,13 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
-// SourceSpec --
-type SourceSpec struct {
-	// Foo1 is an example field of Memcached. Edit Memcached_types.go to remove/update
-	Foo1 string `json:"foo1,omitempty"`
-	// Foo2 is an example field of Memcached. Edit Memcached_types.go to remove/update
-	Foo2 string `json:"foo2,omitempty"`
-	// Foo3 is an example field of Memcached. Edit Memcached_types.go to remove/update
-	Foo3 string `json:"foo3,omitempty"`
-}
-
 // MemcachedSpec defines the desired state of Memcached
 type MemcachedSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of Memcached. Edit Memcached_types.go to remove/update
+	// Foo is an example field of Memcached. Edit memcached_types.go to remove/update
 	Foo string `json:"foo,omitempty"`
-
-	// Some sources
-	Sources []SourceSpec `json:"sources,omitempty"`
 }
 
 // MemcachedStatus defines the observed state of Memcached
@@ -51,8 +38,8 @@ type MemcachedStatus struct {
 	// Important: Run "make" to regenerate code after modifying this file
 }
 
-// +kubebuilder:object:root=true
-// +kubebuilder:subresource:status
+//+kubebuilder:object:root=true
+//+kubebuilder:subresource:status
 
 // Memcached is the Schema for the memcacheds API
 type Memcached struct {
@@ -63,7 +50,7 @@ type Memcached struct {
 	Status MemcachedStatus `json:"status,omitempty"`
 }
 
-// +kubebuilder:object:root=true
+//+kubebuilder:object:root=true
 
 // MemcachedList contains a list of Memcached
 type MemcachedList struct {
